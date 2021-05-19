@@ -25,7 +25,6 @@ class Profile(ResultsObject):
             'school': 'li[data-control-name="education_see_more"]',
             'location': '.pv-top-card--list-bullet > li',
         })
-
         personal_info['summary'] = text_or_default(
             self.soup, '.pv-about-section .pv-about__summary-text', '').replace('... see more', '').strip()
 
